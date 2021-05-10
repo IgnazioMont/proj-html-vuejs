@@ -138,9 +138,8 @@ main {
     .blog-posts {
         background-color: $bg-gray;
         margin-top: -175px;
-        padding-top: 200px;
-
-        .blog-title { text-align: center; }
+        padding: 200px 0 100px 0;
+        text-align: center;
 
         .blog-cols {
             @include display_flex_centered;
@@ -149,7 +148,6 @@ main {
 
             .blog-single-col {
                 width: 32%;
-                text-align: center;
 
                 .blog-img { margin: auto; }
                 .p-inner { padding: 15px; }

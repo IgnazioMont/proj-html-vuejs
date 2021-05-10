@@ -7,6 +7,7 @@
 /* Gunsmoke */
 /* Silver Chalice */
 /* Lightgrey background "Ebb" */
+/* Cod Gray */
 /* RESET */
 * {
   margin: 0;
@@ -341,9 +342,7 @@ main .reviews .polygon {
 main .blog-posts {
   background-color: #eae8e6;
   margin-top: -175px;
-  padding-top: 200px;
-}
-main .blog-posts .blog-title {
+  padding: 200px 0 100px 0;
   text-align: center;
 }
 main .blog-posts .blog-cols {
@@ -355,11 +354,59 @@ main .blog-posts .blog-cols {
 }
 main .blog-posts .blog-cols .blog-single-col {
   width: 32%;
-  text-align: center;
 }
 main .blog-posts .blog-cols .blog-single-col .blog-img {
   margin: auto;
 }
 main .blog-posts .blog-cols .blog-single-col .p-inner {
   padding: 15px;
+}
+
+footer {
+  background-color: #111110;
+  padding-top: 40px;
+  /* Columns */
+}
+footer .footer-cols {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+footer .footer-cols button {
+  color: #ae8652;
+  font-size: 13px;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding: 14px 28px;
+  border: 2px solid #ae8652;
+  background-color: transparent;
+  cursor: pointer;
+}
+footer .footer-cols .col {
+  width: 30%;
+  margin: auto;
+  text-align: center;
+}
+footer .footer-cols .col .shop-img {
+  margin-bottom: 25px;
+}
+footer .footer-cols .col.center .footer-logo {
+  width: 150px;
+  margin: auto;
+}
+footer .footer-cols .col.center .p-inner {
+  padding: 40px 0;
+}
+footer .footer-cols .col.center .social-imgs {
+  padding-top: 20px;
+}
+footer .footer-cols .col.center .social-imgs li a i {
+  margin: 0 5px;
+}
+footer .bottom-raw {
+  background-color: #191817;
+  padding: 25px 0;
+  margin-top: 40px;
+  text-align: center;
+  font-size: 12px;
 }

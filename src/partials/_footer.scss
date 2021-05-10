@@ -1,0 +1,38 @@
+footer {
+    background-color: $black;
+    padding-top: 40px;
+
+    /* Columns */
+    .footer-cols {
+        button { @include button; }
+        @include display_flex_centered;
+
+        .col {
+            width: 30%;
+            margin: auto;
+            text-align: center;
+            .shop-img { margin-bottom: 25px; }
+
+            &.center {
+                .footer-logo { 
+                    width: 150px;
+                    margin: auto;
+                }
+                .p-inner { padding: 40px 0; }
+
+                .social-imgs {
+                    padding-top: 20px;
+                    li a i { margin: 0 5px; }
+                }
+            }
+        }
+    }
+
+    .bottom-raw {
+        background-color: $footer_bottom_bg;
+        padding: 25px 0;
+        margin-top: 40px;
+        text-align: center;
+        font-size: 12px;
+    }    
+}
