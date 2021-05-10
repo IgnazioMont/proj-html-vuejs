@@ -25,11 +25,17 @@ body {
 /* Styles */
 h1, h2, h3, h4, h5, h6 {
   font-family: "Abril Fatface", cursive;
+  font-weight: normal;
 }
 
 h1 {
   font-size: 65px;
   color: #ffffff;
+}
+
+h2 {
+  font-size: 50px;
+  color: #b0b0b0;
 }
 
 .container {
@@ -55,12 +61,20 @@ li {
 button {
   color: #ae8652;
   font-size: 13px;
-  font-weight: bolder;
+  font-weight: 600;
   text-transform: uppercase;
   padding: 14px 28px;
   border: 2px solid #ae8652;
   background-color: transparent;
   cursor: pointer;
+}
+
+.small-heading {
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #ae8652;
+  letter-spacing: 2px;
 }
 
 header .bg-header-image {
@@ -112,7 +126,7 @@ header .bg-header-image .jumbotron .jumbo-col-right .jumbo-img {
 }
 header .bg-header-image .square-fixed {
   position: fixed;
-  top: 150px;
+  top: 100px;
   right: 10px;
   z-index: 1;
 }
@@ -122,4 +136,43 @@ header .bg-header-image .square-fixed .square {
   border-radius: 5px;
   box-shadow: 0 0 20px #88928f;
   margin-top: 8px;
+  padding: 5px;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  font-weight: bolder;
+}
+header .bg-header-image .square-fixed .square.one i {
+  font-size: 20px;
+}
+header .bg-header-image .square-fixed .square.two .discount {
+  color: #38c238;
+  font-weight: bolder;
+  font-size: 25px;
+  font-weight: 600;
+}
+header .bg-header-image .square-fixed .square.two .discount sup {
+  font-size: 12px;
+}
+header .bg-header-image .square-fixed .square p {
+  font-size: 10px;
+}
+
+main .bg-head-main {
+  background-image: url("../img/avadabarbers-about-introbackground.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 450px;
+  background-position: top;
+  padding-top: 80px;
+  text-align: center;
+}
+main .bg-head-main button {
+  margin-top: 35px;
+}
+main .polygon {
+  -webkit-clip-path: polygon(50% 15%, 100% 50%, 50% 50%, 0% 50%);
+  height: 350px;
+  background-color: white;
+  margin-top: 32px;
 }

@@ -14,10 +14,17 @@ body {
 }
 
 /* Styles */
-h1, h2, h3, h4, h5, h6 { font-family: 'Abril Fatface', cursive; }
+h1, h2, h3, h4, h5, h6 { 
+    font-family: 'Abril Fatface', cursive;
+    font-weight: normal;
+}
 h1 {
     font-size: 65px;
     color: $white;
+}
+h2 {
+    font-size: 50px;
+    color: $lighter_gray;
 }
 .container {
     width: $main_container;
@@ -42,10 +49,18 @@ li {
 button {
     color: $main_gold;
     font-size: 13px;
-    font-weight: bolder;
+    font-weight: 600;
     text-transform: uppercase;
     padding: 14px 28px;
     border: 2px solid $main_gold;
     background-color: transparent;
     cursor: pointer;
+}
+
+.small-heading {
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: $main_gold;
+    letter-spacing: 2px;
 }

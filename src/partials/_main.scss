@@ -1,0 +1,20 @@
+main {
+    .bg-head-main {
+        background-image: url("../img/avadabarbers-about-introbackground.jpg");
+        background-position: center;
+        background-size: cover;
+        height: 450px;
+        background-position: top;
+        padding-top: 80px;
+        text-align: center;
+
+        button { margin-top: 35px; }
+    }
+
+    .polygon {
+        -webkit-clip-path: polygon(50% 15%, 100% 50%, 50% 50%, 0% 50%);
+        height: 350px;
+        background-color: white;
+        margin-top: 32px;
+    }
+}
