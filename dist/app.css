@@ -6,6 +6,7 @@
 /* Teak muted */
 /* Gunsmoke */
 /* Silver Chalice */
+/* Lightgrey background "Ebb" */
 /* RESET */
 * {
   margin: 0;
@@ -81,6 +82,16 @@ li {
 
 .p-inner {
   line-height: 1.7;
+}
+
+.review-user-img img {
+  border-radius: 50%;
+}
+
+.user-name {
+  font-style: italic;
+  font-weight: 600;
+  color: #ae8652;
 }
 
 header button {
@@ -178,6 +189,8 @@ main {
   /* Services section */
   /* Products section */
   /* Featured product box */
+  /* Reviews section */
+  /* Blog section */
 }
 main button {
   color: #ae8652;
@@ -211,7 +224,6 @@ main .bg-head-main button {
 main .services {
   text-align: center;
   padding: 50px 0;
-  height: 788px;
 }
 main .services .columns {
   display: flex;
@@ -243,7 +255,6 @@ main .products {
   background-position: center;
   background-size: cover;
   background-position: top;
-  height: 800px;
   padding-top: 80px;
   text-align: center;
 }
@@ -258,6 +269,9 @@ main .products .product-cols .single-col {
 }
 main .products .product-cols .single-col .product-text p {
   color: #ae8652;
+}
+main .products .container {
+  padding-bottom: 150px;
 }
 main .products .container button {
   margin-top: 30px;
@@ -296,4 +310,56 @@ main .featured-product .feat-box-text .p-inner {
 }
 main .featured-product .feat-box-text button {
   margin-top: 15px;
+}
+main .reviews {
+  padding-top: 130px;
+  text-align: center;
+  /* TEST */
+}
+main .reviews .review-title {
+  padding-bottom: 30px;
+}
+main .reviews .review-cols {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 30px;
+}
+main .reviews .review-cols .review-single-col {
+  width: 28%;
+}
+main .reviews .review-cols .review-single-col .review-user-img {
+  margin: 15px auto 15px auto;
+  width: 70px;
+}
+main .reviews .polygon {
+  /* Reversed */
+  -webkit-clip-path: polygon(50% 85%, 100% 50%, 50% 50%, 0% 50%);
+          clip-path: polygon(50% 85%, 100% 50%, 50% 50%, 0% 50%);
+  margin-top: -126px;
+}
+main .blog-posts {
+  background-color: #eae8e6;
+  margin-top: -175px;
+  padding-top: 200px;
+}
+main .blog-posts .blog-title {
+  text-align: center;
+}
+main .blog-posts .blog-cols {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-items: flex-start;
+  padding: 50px 0;
+}
+main .blog-posts .blog-cols .blog-single-col {
+  width: 32%;
+  text-align: center;
+}
+main .blog-posts .blog-cols .blog-single-col .blog-img {
+  margin: auto;
+}
+main .blog-posts .blog-cols .blog-single-col .p-inner {
+  padding: 15px;
 }

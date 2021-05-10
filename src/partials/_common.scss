@@ -65,3 +65,11 @@ li {
 }
 
 .p-inner { line-height: 1.7; }
+
+.review-user-img img { border-radius: 50%; }
+
+.user-name {
+    font-style: italic;
+    font-weight: 600;
+    color: $main_gold;
+}

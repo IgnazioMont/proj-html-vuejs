@@ -17,7 +17,6 @@ main {
     .services {
         text-align: center;
         padding: 50px 0;
-        height: 788px;
 
         .columns {
             @include display_flex_centered;
@@ -53,7 +52,6 @@ main {
     .products {
         background-image: url("../img/avadabarbers-reviewsbackground.jpg");
         @include bg-image;
-        height: 800px;
         padding-top: 80px;
         text-align: center;
 
@@ -71,6 +69,7 @@ main {
         }
 
         .container {
+            padding-bottom: 150px;
             button { margin-top: 30px; }
         }
     }
@@ -103,6 +102,58 @@ main {
 
             .p-inner { margin-top: 30px; }
             button { margin-top: 15px; }
+        }
+    }
+
+    /* Reviews section */
+    .reviews {
+        padding-top: 130px;
+        text-align: center;
+
+        .review-title { padding-bottom: 30px; }
+
+        .review-cols {
+            @include display_flex_centered;
+            padding-bottom: 30px;
+
+            .review-single-col {
+                width: 28%;
+
+                .review-user-img {
+                    margin: 15px auto 15px auto;
+                    width: 70px; 
+                }
+            }
+        }
+
+        /* TEST */
+        .polygon {
+            /* Reversed */
+            clip-path: polygon(50% 85%, 100% 50%, 50% 50%, 0% 50%);
+            margin-top: -126px;
+        }
+    }
+
+    /* Blog section */
+    .blog-posts {
+        background-color: $bg-gray;
+        margin-top: -175px;
+        padding-top: 200px;
+
+        .blog-title { text-align: center; }
+
+        .blog-cols {
+            @include display_flex_centered;
+            align-items: flex-start;
+            padding: 50px 0;
+
+            .blog-single-col {
+                width: 32%;
+                text-align: center;
+
+                .blog-img { margin: auto; }
+                .p-inner { padding: 15px; }
+            }
         }
     }
 }
