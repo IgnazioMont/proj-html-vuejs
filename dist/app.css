@@ -1,4 +1,10 @@
-/* COMMON rules */
+/* CONTAINERS */
+/* COLORS */
+/* White */
+/* Driftwood */
+/* Teak muted */
+/* Gunsmoke */
+/* Silver Chalice */
 /* RESET */
 * {
   margin: 0;
@@ -13,12 +19,107 @@ img {
 
 body {
   font-family: "Lato", sans-serif;
+  font-weight: 300;
 }
 
+/* Styles */
 h1, h2, h3, h4, h5, h6 {
   font-family: "Abril Fatface", cursive;
 }
 
-/* @import 'partials/header';
-@import 'partials/main';
-@import 'partials/footer'; */
+h1 {
+  font-size: 65px;
+  color: #ffffff;
+}
+
+.container {
+  width: 1200px;
+  margin: auto;
+}
+
+.small-wrapper {
+  width: 900px;
+  margin: auto;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+li {
+  display: inline-block;
+  list-style-type: none;
+}
+
+button {
+  color: #ae8652;
+  font-size: 13px;
+  font-weight: bolder;
+  text-transform: uppercase;
+  padding: 14px 28px;
+  border: 2px solid #ae8652;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+header .bg-header-image {
+  background-image: url("../img/avadabarbers-homepage-hero-bg.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 650px;
+  position: relative;
+  /* Logo + 2 icons */
+  /* JUMBOTRON */
+  /* 2 square fixed */
+}
+header .bg-header-image nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 40px;
+}
+header .bg-header-image nav .logo {
+  width: 150px;
+}
+header .bg-header-image nav .buy-menu li {
+  margin-left: 20px;
+  font-size: 20px;
+}
+header .bg-header-image .jumbotron {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .bg-header-image .jumbotron .jumbo-col-left {
+  width: 60%;
+}
+header .bg-header-image .jumbotron .jumbo-col-left .jumbo-text div {
+  width: 35%;
+  margin: 30px 0;
+  border-bottom: 4px solid #ae8652;
+}
+header .bg-header-image .jumbotron .jumbo-col-left .jumbo-text p {
+  font-size: 18px;
+  margin: 30px 0;
+  color: #88928f;
+}
+header .bg-header-image .jumbotron .jumbo-col-right {
+  width: 40%;
+}
+header .bg-header-image .jumbotron .jumbo-col-right .jumbo-img {
+  width: 90%;
+}
+header .bg-header-image .square-fixed {
+  position: fixed;
+  top: 150px;
+  right: 10px;
+  z-index: 1;
+}
+header .bg-header-image .square-fixed .square {
+  text-align: center;
+  background-color: #ffffff;
+  border-radius: 5px;
+  box-shadow: 0 0 20px #88928f;
+  margin-top: 8px;
+}
