@@ -9,3 +9,27 @@
     display: table;
     clear: both;
 }
+
+@mixin button {
+    color: $main_gold;
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 14px 28px;
+    border: 2px solid $main_gold;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+@mixin polygon {
+    clip-path: polygon(50% 15%, 100% 50%, 50% 50%, 0% 50%);
+    height: 350px;
+    background-color: white;
+    margin-top: 32px;
+}
+
+@mixin bg-image {
+    background-position: center;
+    background-size: cover;
+    background-position: top;
+}

@@ -1,6 +1,7 @@
 /* CONTAINERS */
 /* COLORS */
 /* White */
+/* Black (Cod gray) */
 /* Driftwood */
 /* Teak muted */
 /* Gunsmoke */
@@ -20,6 +21,7 @@ img {
 body {
   font-family: "Lato", sans-serif;
   font-weight: 300;
+  color: #88928f;
 }
 
 /* Styles */
@@ -36,6 +38,17 @@ h1 {
 h2 {
   font-size: 50px;
   color: #b0b0b0;
+}
+
+h3 {
+  font-size: 30px;
+  color: #ae8652;
+}
+
+h4 {
+  font-size: 26px;
+  color: #ae8652;
+  padding: 10px 0;
 }
 
 .container {
@@ -58,7 +71,19 @@ li {
   list-style-type: none;
 }
 
-button {
+.small-heading {
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #ae8652;
+  letter-spacing: 2px;
+}
+
+.p-inner {
+  line-height: 1.7;
+}
+
+header button {
   color: #ae8652;
   font-size: 13px;
   font-weight: 600;
@@ -68,15 +93,6 @@ button {
   background-color: transparent;
   cursor: pointer;
 }
-
-.small-heading {
-  font-size: 12px;
-  font-weight: 600;
-  text-transform: uppercase;
-  color: #ae8652;
-  letter-spacing: 2px;
-}
-
 header .bg-header-image {
   background-image: url("../img/avadabarbers-homepage-hero-bg.jpg");
   background-position: center;
@@ -116,7 +132,6 @@ header .bg-header-image .jumbotron .jumbo-col-left .jumbo-text div {
 header .bg-header-image .jumbotron .jumbo-col-left .jumbo-text p {
   font-size: 18px;
   margin: 30px 0;
-  color: #88928f;
 }
 header .bg-header-image .jumbotron .jumbo-col-right {
   width: 40%;
@@ -158,21 +173,127 @@ header .bg-header-image .square-fixed .square p {
   font-size: 10px;
 }
 
+main {
+  /* Head main section */
+  /* Services section */
+  /* Products section */
+  /* Featured product box */
+}
+main button {
+  color: #ae8652;
+  font-size: 13px;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding: 14px 28px;
+  border: 2px solid #ae8652;
+  background-color: transparent;
+  cursor: pointer;
+}
+main .polygon {
+  -webkit-clip-path: polygon(50% 15%, 100% 50%, 50% 50%, 0% 50%);
+          clip-path: polygon(50% 15%, 100% 50%, 50% 50%, 0% 50%);
+  height: 350px;
+  background-color: white;
+  margin-top: 32px;
+}
 main .bg-head-main {
   background-image: url("../img/avadabarbers-about-introbackground.jpg");
   background-position: center;
   background-size: cover;
-  height: 450px;
   background-position: top;
+  height: 450px;
   padding-top: 80px;
   text-align: center;
 }
 main .bg-head-main button {
   margin-top: 35px;
 }
-main .polygon {
-  -webkit-clip-path: polygon(50% 15%, 100% 50%, 50% 50%, 0% 50%);
-  height: 350px;
-  background-color: white;
-  margin-top: 32px;
+main .services {
+  text-align: center;
+  padding: 50px 0;
+  height: 788px;
+}
+main .services .columns {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 65px 0;
+}
+main .services .columns .col {
+  width: 30%;
+}
+main .services .columns .col .service-img {
+  width: 175px;
+  margin: auto;
+}
+main .services .columns .col .service-img img {
+  width: auto;
+  height: 100px;
+  margin: auto;
+}
+main .services .columns .col .service-text h3 {
+  padding: 25px 0;
+}
+main .services .polygon {
+  background-color: #111110;
+  margin-bottom: -225px;
+}
+main .products {
+  background-image: url("../img/avadabarbers-reviewsbackground.jpg");
+  background-position: center;
+  background-size: cover;
+  background-position: top;
+  height: 800px;
+  padding-top: 80px;
+  text-align: center;
+}
+main .products .product-cols {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+main .products .product-cols .single-col {
+  width: 23%;
+  padding: 20px 0;
+}
+main .products .product-cols .single-col .product-text p {
+  color: #ae8652;
+}
+main .products .container button {
+  margin-top: 30px;
+}
+main .featured-product {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 800px;
+  margin: auto;
+  margin-top: -50px;
+  background-color: #111110;
+  border-top: 4px solid #ae8652;
+}
+main .featured-product .feat-box-img {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-image: url("../img/avadabarbers-cta-background.jpg");
+  background-position: center;
+  background-size: cover;
+  background-position: top;
+  height: 320px;
+  width: 40%;
+}
+main .featured-product .feat-box-img img {
+  width: 80%;
+  margin: auto;
+}
+main .featured-product .feat-box-text {
+  width: 60%;
+  padding: 30px 30px 30px 40px;
+}
+main .featured-product .feat-box-text .p-inner {
+  margin-top: 30px;
+}
+main .featured-product .feat-box-text button {
+  margin-top: 15px;
 }

@@ -11,6 +11,7 @@ img {
 body {
     font-family: 'Lato', sans-serif;
     font-weight: 300;
+    color: $main_gray;
 }
 
 /* Styles */
@@ -25,6 +26,15 @@ h1 {
 h2 {
     font-size: 50px;
     color: $lighter_gray;
+}
+h3 {
+    font-size: 30px;
+    color: $main_gold;
+}
+h4 {
+    font-size: 26px;
+    color: $main_gold;
+    padding: 10px 0;
 }
 .container {
     width: $main_container;
@@ -46,17 +56,6 @@ li {
     list-style-type: none;
 }
 
-button {
-    color: $main_gold;
-    font-size: 13px;
-    font-weight: 600;
-    text-transform: uppercase;
-    padding: 14px 28px;
-    border: 2px solid $main_gold;
-    background-color: transparent;
-    cursor: pointer;
-}
-
 .small-heading {
     font-size: 12px;
     font-weight: 600;
@@ -64,3 +63,5 @@ button {
     color: $main_gold;
     letter-spacing: 2px;
 }
+
+.p-inner { line-height: 1.7; }

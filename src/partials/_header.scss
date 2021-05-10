@@ -1,4 +1,6 @@
 header {
+    button { @include button; }
+    
     .bg-header-image {
         background-image: url("../img/avadabarbers-homepage-hero-bg.jpg");
         background-position: center;
@@ -39,7 +41,6 @@ header {
                     p {
                         font-size: 18px;
                         margin: 30px 0;
-                        color: $main_gray;
                     }
                 }
             }

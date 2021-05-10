@@ -1,20 +1,108 @@
 main {
+    button { @include button; }
+    .polygon { @include polygon; }
+
+    /* Head main section */
     .bg-head-main {
         background-image: url("../img/avadabarbers-about-introbackground.jpg");
-        background-position: center;
-        background-size: cover;
+        @include bg-image;
         height: 450px;
-        background-position: top;
         padding-top: 80px;
         text-align: center;
 
         button { margin-top: 35px; }
     }
+    
+    /* Services section */
+    .services {
+        text-align: center;
+        padding: 50px 0;
+        height: 788px;
 
-    .polygon {
-        -webkit-clip-path: polygon(50% 15%, 100% 50%, 50% 50%, 0% 50%);
-        height: 350px;
-        background-color: white;
-        margin-top: 32px;
+        .columns {
+            @include display_flex_centered;
+            margin: 65px 0;
+
+            .col { 
+                width: 30%;
+
+                .service-img {
+                    width: 175px;
+                    margin: auto;
+
+                    img { 
+                        width: auto; 
+                        height: 100px;
+                        margin: auto;
+                    }
+                }
+
+                .service-text {
+                    h3 { padding: 25px 0; }
+                }
+            }
+        }
+
+        .polygon {
+            background-color: $black;
+            margin-bottom: -225px;
+        }
+    }
+
+    /* Products section */
+    .products {
+        background-image: url("../img/avadabarbers-reviewsbackground.jpg");
+        @include bg-image;
+        height: 800px;
+        padding-top: 80px;
+        text-align: center;
+
+        .product-cols {
+            @include display_flex_centered;
+
+            .single-col {
+                width: 23%;
+                padding: 20px 0;
+
+                .product-text {
+                    p { color: $main_gold; }
+                }
+            }
+        }
+
+        .container {
+            button { margin-top: 30px; }
+        }
+    }
+
+    /* Featured product box */
+    .featured-product {
+        @include display_flex_centered;
+        width: 800px;
+        margin: auto;
+        margin-top: -50px;
+        background-color: $black;
+        border-top: 4px solid $main_gold;
+
+        .feat-box-img {
+            @include display_flex_centered;
+            background-image: url("../img/avadabarbers-cta-background.jpg");
+            @include bg-image;
+            height: 320px;
+            width: 40%;
+
+            img {
+                width: 80%;
+                margin: auto;
+            }
+        }
+
+        .feat-box-text {
+            width: 60%;
+            padding: 30px 30px 30px 40px;
+
+            .p-inner { margin-top: 30px; }
+            button { margin-top: 15px; }
+        }
     }
 }
