@@ -56,6 +56,8 @@ li {
     list-style-type: none;
 }
 
+i { transition: 1s; }
+
 .small-heading {
     font-size: 12px;
     font-weight: 600;
@@ -72,4 +74,16 @@ li {
     font-style: italic;
     font-weight: 600;
     color: $main_gold;
+}
+
+button:hover,
+header .buy-menu i:hover,
+footer .social-imgs i:hover {
+    color: $hover_gold;
+    border-color: $hover_gold;
+    transform: scale(1.15);
+}
+
+footer .chevron:hover {
+    background-color: $hover_gold;
 }

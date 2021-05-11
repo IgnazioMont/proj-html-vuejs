@@ -6,7 +6,6 @@ header {
         background-position: center;
         background-size: cover;
         height: 650px;
-        position: relative;
 
         /* Logo + 2 icons */
         nav {
@@ -47,13 +46,11 @@ header {
             .jumbo-col-right {
                 width: 40%;
 
-                .jumbo-img {
-                    width: 90%;
-                }
+                .jumbo-img { width: 90%; }
             }
         }
 
-        /* 2 square fixed */
+        /* 2 fixed squares */
         .square-fixed {
             position: fixed;
             top: 100px;
@@ -73,13 +70,13 @@ header {
                 font-weight: bolder;
 
                 &.one {
+                    padding-top: 10px;
                     i { font-size: 20px; }
                 }
 
                 &.two {
                     .discount {
                         color: #38c238;
-                        font-weight: bolder;
                         font-size: 25px;
                         font-weight: 600;
                         sup {

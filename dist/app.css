@@ -3,11 +3,13 @@
 /* White */
 /* Black (Cod gray) */
 /* Driftwood */
-/* Teak muted */
+/* custom for hover effect */
 /* Gunsmoke */
 /* Silver Chalice */
 /* Lightgrey background "Ebb" */
 /* Cod Gray */
+/* Emperor */
+/* Non usato */
 /* RESET */
 * {
   margin: 0;
@@ -73,6 +75,10 @@ li {
   list-style-type: none;
 }
 
+i {
+  transition: 1s;
+}
+
 .small-heading {
   font-size: 12px;
   font-weight: 600;
@@ -95,6 +101,18 @@ li {
   color: #ae8652;
 }
 
+button:hover,
+header .buy-menu i:hover,
+footer .social-imgs i:hover {
+  color: #906933;
+  border-color: #906933;
+  transform: scale(1.15);
+}
+
+footer .chevron:hover {
+  background-color: #906933;
+}
+
 header button {
   color: #ae8652;
   font-size: 13px;
@@ -104,16 +122,16 @@ header button {
   border: 2px solid #ae8652;
   background-color: transparent;
   cursor: pointer;
+  transition: 1s;
 }
 header .bg-header-image {
   background-image: url("../img/avadabarbers-homepage-hero-bg.jpg");
   background-position: center;
   background-size: cover;
   height: 650px;
-  position: relative;
   /* Logo + 2 icons */
   /* JUMBOTRON */
-  /* 2 square fixed */
+  /* 2 fixed squares */
 }
 header .bg-header-image nav {
   display: flex;
@@ -169,12 +187,14 @@ header .bg-header-image .square-fixed .square {
   cursor: pointer;
   font-weight: bolder;
 }
+header .bg-header-image .square-fixed .square.one {
+  padding-top: 10px;
+}
 header .bg-header-image .square-fixed .square.one i {
   font-size: 20px;
 }
 header .bg-header-image .square-fixed .square.two .discount {
   color: #38c238;
-  font-weight: bolder;
   font-size: 25px;
   font-weight: 600;
 }
@@ -202,6 +222,7 @@ main button {
   border: 2px solid #ae8652;
   background-color: transparent;
   cursor: pointer;
+  transition: 1s;
 }
 main .polygon {
   -webkit-clip-path: polygon(50% 15%, 100% 50%, 50% 50%, 0% 50%);
@@ -381,6 +402,7 @@ footer .footer-cols button {
   border: 2px solid #ae8652;
   background-color: transparent;
   cursor: pointer;
+  transition: 1s;
 }
 footer .footer-cols .col {
   width: 30%;
@@ -397,6 +419,9 @@ footer .footer-cols .col.center .footer-logo {
 footer .footer-cols .col.center .p-inner {
   padding: 40px 0;
 }
+footer .footer-cols .col.center .p-inner li {
+  display: block;
+}
 footer .footer-cols .col.center .social-imgs {
   padding-top: 20px;
 }
@@ -409,4 +434,18 @@ footer .bottom-raw {
   margin-top: 40px;
   text-align: center;
   font-size: 12px;
+}
+footer .chevron {
+  position: fixed;
+  bottom: 0;
+  right: 100px;
+  z-index: 1;
+  padding: 5px 15px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  background-color: #505050;
+  transition: 1s;
+}
+footer .chevron .fas {
+  font-size: 14px;
 }

@@ -9,7 +9,20 @@
 
 var app = new Vue({
   el: "#root",
-  data: {}
+  data: {
+    icon: false,
+    chevron: false,
+    address: ["Avada Barbers", "123 New York Street", "New York City", "info@yourwebsite.com", "+1 (555) 555-1212"]
+  },
+  methods: {
+    //  Change position fixed icons on hover
+    iconOver: function iconOver() {
+      this.icon = !this.icon;
+    },
+    chevronOver: function chevronOver() {
+      this.chevron = !this.chevron;
+    }
+  }
 });
 
 /***/ }),

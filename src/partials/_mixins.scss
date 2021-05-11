@@ -4,6 +4,7 @@
     align-items: center;
 } 
 
+/* Non usato */
 @mixin clearfix {
     content: "";
     display: table;
@@ -19,6 +20,7 @@
     border: 2px solid $main_gold;
     background-color: transparent;
     cursor: pointer;
+    transition: 1s;
 }
 
 @mixin polygon {

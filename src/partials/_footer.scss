@@ -18,7 +18,10 @@ footer {
                     width: 150px;
                     margin: auto;
                 }
-                .p-inner { padding: 40px 0; }
+                .p-inner { 
+                    padding: 40px 0;
+                    li { display: block; }
+                }
 
                 .social-imgs {
                     padding-top: 20px;
@@ -34,5 +37,19 @@ footer {
         margin-top: 40px;
         text-align: center;
         font-size: 12px;
-    }    
+    }
+
+    .chevron {
+        position: fixed;
+        bottom: 0;
+        right: 100px;
+        z-index: 1;
+        padding: 5px 15px;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+        background-color: $chevron_bg;
+        transition: 1s;
+
+        .fas { font-size: 14px; }
+    }
 }

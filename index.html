@@ -18,6 +18,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Lato:wght@100;300;400&display=swap" rel="stylesheet">
 
         <title>My Barber shop</title>
+        <link rel="icon" type="image/jpg" href="img/title-head.png"/>
     </head>
 
 
@@ -36,7 +37,7 @@
                         <div class="buy-menu">
                             <ul>
                                 <li><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
-                                <li><a href=""><i class="fas fa-bars"></i></a></li>
+                                <li><a href="#"><i class="fas fa-bars"></i></a></li>
                             </ul>
                         </div>
                     </nav>
@@ -49,7 +50,7 @@
                                 <h1>Barber Shop</h1>
                                 <div></div>
                                 <p>The Pinnacle of Male Grooming</p>
-                                <button>Learn more</button>
+                                <button title="Learn more">Learn more</button>
                             </div>
                         </div>
 
@@ -65,8 +66,12 @@
                     <div class="square-fixed">
                         <!-- Square one -->
                         <div class="square one">
-                            <i class="fas fa-clone"></i>
-                            <!-- Con Vue cambio icon in <i class="fas fa-photo-video"></i> -->
+                            <!-- Change icon on hover -->
+                            <i  @mouseover="iconOver"
+                                @mouseleave="iconOver" 
+                                class="fas " 
+                                :class="icon ? 'fa-play' : 'fa-clone'">
+                            </i>
                             <p>Demos</p>
                         </div>
                         <!-- Square two -->
@@ -86,7 +91,7 @@
                 <div class="small-wrapper">
                     <p class="small-heading">Award winning</p>
                     <h2>Pro Barbers</h2>
-                    <button>Meet your new barber</button>
+                    <button title="Meet the barber">Meet your new barber</button>
                 </div>
                 <!-- Empty polygon DIV -->
                 <div class="polygon"></div>
@@ -134,7 +139,7 @@
                             </div>
                         </div>
                     </div>
-                    <button>Read about our services</button>
+                    <button title="Read about">Read about our services</button>
                 </div>
 
                 <!-- Empty polygon DIV -->
@@ -197,7 +202,7 @@
                         </div>
                     </div>
 
-                    <button>Shop our product range</button>
+                    <button title="Shop the products">Shop our product range</button>
                 </div>
             </section>
 
@@ -214,7 +219,7 @@
                     <h2>Shaving butter</h2>
                     <!-- Text + button -->
                     <p class="p-inner">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque laoreet enim est, vel molestie dolor ultrices ut. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                    <button>Buy now</button>
+                    <button title="Buy now">Buy now</button>
                 </div>
             </div>
 
@@ -302,7 +307,7 @@
                         </div>
                     </div>
 
-                    <button>Read more from our blog</button>
+                    <button title="Read more">Read more from our blog</button>
                 </div>
             </section>
         </main>
@@ -318,7 +323,7 @@
                         <div class="shop-img">
                             <img src="img/avadabarbers_footer_shop_image-300x234.png" alt="Shop">
                         </div>
-                        <button>Shop our range now</button>
+                        <button title="Shop now">Shop our range now</button>
                     </div>
 
                     <!-- Barber info col -->
@@ -326,20 +331,15 @@
                         <div class="footer-logo">
                             <a href="index.html"><img src="img/avadabarbers-logo-x2-200x70.png" alt="Logo"></a>
                         </div>
-                        <p class="p-inner"> <!-- JS? -->
-                            Avada Barbers <br>
-                            123 New York Street <br>
-                            New York City <br>
-                            info@yourwebsite.com <br>
-                            +1 (555) 555-1212
-                        </p>
+                        <ul class="p-inner">
+                            <li v-for="(text, index) in address"> {{ text }}
+                        </ul>
                         <p class="small-heading">Follow us</p>
                         <ul class="social-imgs">
-                            <!-- JS? -->
                             <li><a href="#" title="Facebook"><i class="fab fa-facebook-f"></i></a></li>
-                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                            <li><a href="#"><i class="fab fa-youtube"></i></a></li>
-                            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                            <li><a href="#" title="Twitter"><i class="fab fa-twitter"></i></a></li>
+                            <li><a href="#" title="YouTube"><i class="fab fa-youtube"></i></a></li>
+                            <li><a href="#" title="Instagram"><i class="fab fa-instagram"></i></a></li>
                         </ul>
                     </div>
 
@@ -348,7 +348,7 @@
                         <div class="shop-img">
                             <img src="img/avadabarbers_footer_appointment_image-300x234.png" alt="Book">
                         </div>
-                        <button>Book your appointment</button>
+                        <button title="Book now">Book your appointment</button>
                     </div>
                 </div>
             </div>
@@ -358,8 +358,16 @@
                 <p class="p-inner">&#169; Copyright 2012 - 2021 | Avada Theme by ThemeFusion | All Rights Reserved | Powered by WordPress</p>
             </div>
 
-            <!-- Chevron fixed -->
-            <div></div>
+            <!-- Chevron position fixed + toggle on hover -->
+            <div class="chevron">
+                <a href="#">
+                    <i  @mouseover="chevronOver" 
+                        @mouseleave="chevronOver" 
+                        class="fas " 
+                        :class="chevron ? 'fa-chevron-down' : 'fa-chevron-up'">
+                    </i>
+                </a>
+            </div>
         </footer>
         
     </div>
