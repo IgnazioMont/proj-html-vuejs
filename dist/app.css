@@ -422,6 +422,9 @@ footer .footer-cols .col.center .p-inner {
 footer .footer-cols .col.center .p-inner li {
   display: block;
 }
+footer .footer-cols .col.center .p-inner li.active {
+  color: #906933;
+}
 footer .footer-cols .col.center .social-imgs {
   padding-top: 20px;
 }

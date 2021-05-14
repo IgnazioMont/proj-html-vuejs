@@ -18,9 +18,17 @@ footer {
                     width: 150px;
                     margin: auto;
                 }
+                
+
                 .p-inner { 
                     padding: 40px 0;
-                    li { display: block; }
+                    li { 
+                        display: block;
+                        &.active {
+                            color: $hover_gold;
+                        }
+                    }
+                    
                 }
 
                 .social-imgs {

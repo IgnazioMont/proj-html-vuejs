@@ -5,11 +5,26 @@ const app = new Vue({
         icon: false,
         chevron: false,
         address: [
-            "Avada Barbers",
-            "123 New York Street",
-            "New York City",
-            "info@yourwebsite.com",
-            "+1 (555) 555-1212"                            
+            {
+                info: "Avada Barbers",
+                isActive: false
+            },
+            {
+                info: "123 New York Street",
+                isActive: false
+            },
+            {
+                info: "New York City",
+                isActive: false
+            },
+            {
+                info: "info@yourwebsite.com",
+                isActive: false
+            },
+            {
+                info: "+1 (555) 555-1212",
+                isActive: false
+            }
         ]
     },
 
@@ -20,6 +35,10 @@ const app = new Vue({
         },
         chevronOver() {
             this.chevron = !this.chevron;
+        },
+        /* Test by Simone */
+        toggleActive(index) {
+            this.address[index].isActive = !this.address[index].isActive;
         }
     }
 });

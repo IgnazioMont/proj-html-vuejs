@@ -331,7 +331,11 @@
                             <a href="index.html"><img src="img/avadabarbers-logo-x2-200x70.png" alt="Logo"></a>
                         </div>
                         <ul class="p-inner">
-                            <li v-for="(text, index) in address"> {{ text }}
+                            <li v-for="(text, index) in address"
+                                :class="{ 'active' : text.isActive }"
+                                @click="toggleActive(index)">
+                                {{ text.info }}
+                            </li>
                         </ul>
                         <p class="small-heading">Follow us</p>
                         <ul class="social-imgs">
